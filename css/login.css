@@ -17,6 +17,7 @@
 
 .logout{
     border: none;
+    cursor: pointer;
 }
 
 #clock{
@@ -67,16 +68,31 @@
     height: 50px;
     border: none;
     padding-left: 20px;
+    margin-top: 10px;
 }
 
 #todo-list span{
-    font-size: 20px;
+    font-size: 18px;
     color: black;
 }
 
 #todo-list li{
+    width: 300px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 10px;
     text-align: center;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+}
+#todo-list li:hover{
+    background: rgba(0, 0, 0, 0.1);
+
+}
+#todo-list li:last-child{
+    margin-bottom: 100px;
 }
 #todo-list button{
     border: none;

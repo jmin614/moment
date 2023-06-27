@@ -45,9 +45,13 @@ if(savedUsername === null){ //localstorage 데이터가 없을 때
     //localstorage 로그아웃
     const logOut = greeting.querySelector(".logout");
     function logoutBtn(){
-        window.localStorage.clear(); //로그아웃 했으면 다 지워야지!
-        alert("로그아웃 되었습니다.");
-        location.reload(); //로그아웃 후 새로고침
+        if(!confirm("정말 로그아웃 하시겠습니다? 로그아웃 하면 모든 기록이 삭제됩니다.")){
+
+        }else{
+            window.localStorage.clear(); //로그아웃 했으면 다 지워야지!
+            alert("로그아웃 되었습니다.");
+            location.reload(); //로그아웃 후 새로고침
+        }
     }
     logOut.addEventListener("click", logoutBtn); //로그아웃 버튼 클릭 시
 

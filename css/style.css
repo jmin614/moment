@@ -58,13 +58,14 @@ body{
     width: 400px;
     height: 50px;
     border: none;
+    padding-left: 20px;
 }
 
 .login-form button{
     height: 51px;
     border: none;
     background-color: #9986EE;
-    border-radius: 10px;
+    border-radius: 5px;
     color: white;
     cursor:pointer;
     margin-left: 10px;
