@@ -1,0 +1,72 @@
+@import "reset.css";
+
+.hidden{
+    display: none;
+}
+
+body{
+    /* background-position: center;  */
+    background-repeat: no-repeat; 
+    /* background-size: cover;  */
+    min-height: 100vh; /*뷰포트높이*/
+    min-width: 100vh;
+}
+
+.login-form h1{
+    font-size: 100px;
+    min-width: 600px;
+    font-weight: bold;
+    line-height: 100px;
+    white-space: nowrap;
+    margin: 0;
+    position: absolute;
+    color: transparent; /*안보이게 숨김*/
+    top:40%;
+    left:50%;
+    transform: translate(-50%, -50%); /*중앙정렬*/
+}
+
+.login-form h1::before{
+    content: "안녕하세요 !!";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    overflow: hidden;
+    animation: typing 1.5s steps(6) forwards;
+}
+@keyframes typing{
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+
+.login-form div{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.login-form input{
+    width: 400px;
+    height: 50px;
+    border: none;
+}
+
+.login-form button{
+    height: 51px;
+    border: none;
+    background-color: #9986EE;
+    border-radius: 10px;
+    color: white;
+    cursor:pointer;
+    margin-left: 10px;
+}
+
