@@ -25,7 +25,7 @@ function deleteToDo(event){
     //클릭한 todo와 다른 id는 남겨두고 싶다는 뜻
     //parseInt : 숫자로 바꿈
     savwToDos();
-    console.log(li.id);
+    // console.log(li.id);
 
 
 }
@@ -80,7 +80,7 @@ todoForm.addEventListener("submit", handleToFoSubmit);
 if(savedToDos !== null){ //null이 아니면
     const parsedToDos = JSON.parse(savedToDos); //js가 이해할 수 있는 array
     toDos = parsedToDos; //toDos를 빈값이 아니게 설정
-    console.log(parsedToDos);
+    // console.log(parsedToDos);
 
     // parsedToDos.forEach(sayHello); 
     //forEach : array의 각 item에 대해 function 실행
